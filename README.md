@@ -1,5 +1,5 @@
 # determinant_of_matrix
-Program can calculate determinant of marix 2x2, 3x3, 4x4 and 5x5
+Program can calculate determinant of marix nxn
 
 
 Parameters (matrix numbers) are specified line by line, from left to right.
