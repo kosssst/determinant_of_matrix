@@ -22,10 +22,6 @@ long long int det_n(long long int n, long long int ** arr){
                 }
             }
             result += (int)pow(-1, (double)i) * arr[0][i] * det_n(n-1, matrix);
-//            for(long long int k = 0;k < n;k++){
-//                delete [] matrix[k];
-//            }
-//            delete [] matrix;
         }
     }else{
         result = det2(arr);
@@ -82,9 +78,9 @@ int main() {
     else{
         std::cout << std::endl << "Result = " << det_n(matrix_size, matrix) << std::endl;
     }
-//    for(long long int i = 0;i < matrix_size;i++){
-//        delete [] matrix[i];
-//    }
-//    delete [] matrix;
+    for(long long int i = 0;i < matrix_size;i++){
+        delete [] matrix[i];
+    }
+    delete [] matrix;
     return 0;
 }
